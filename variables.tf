@@ -46,7 +46,10 @@ variable "autoscale_desired" {
     description = "Desired autoscale (number of EC2)"
 }
 
-
+variable "containers" {
+    default = "2"
+    description = "Desired number of running containers"
+}
 variable "instance_type" {
     default = "t2.micro"
 }
